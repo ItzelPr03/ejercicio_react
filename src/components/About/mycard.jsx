@@ -21,7 +21,7 @@ export default function MyCard() {
     };
 
   return (
-    <Card className='card' sx={{ maxWidth: 345 }}>
+    <Card className='card-personal' sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         alt="mi foto"
