@@ -25,7 +25,7 @@ export default function MyCard() {
       <CardMedia
         component="img"
         alt="mi foto"
-        height="200px"
+        height="300px"
         width= "200px"
         image= {foto_card}
       />
@@ -51,8 +51,12 @@ export default function MyCard() {
         
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small"
+        target='_blank'
+        href="https://www.linkedin.com/in/itzel-perez-rodriguez-bab476182">LinkedIn</Button>
+        <Button size="small"
+        target='_blank'
+        href='https://github.com/ItzelPr03'>GitHub</Button>
       </CardActions>
     </Card>
   );
