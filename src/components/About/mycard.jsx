@@ -6,6 +6,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import CakeIcon from '@mui/icons-material/Cake';
 import foto_card from '../../assets/foto_personal.jpeg'
 import './mycard.css'
 
@@ -37,7 +40,7 @@ export default function MyCard() {
           {position}
         </Typography>
         <Typography variant="h7" color="text.secondary" component='div'>
-            {age}
+          <CakeIcon fontSize='medium'></CakeIcon> {age}
         </Typography>
         <Typography variant='h7' color= 'text.secondary'>
             {city}
@@ -53,10 +56,14 @@ export default function MyCard() {
       <CardActions>
         <Button size="small"
         target='_blank'
-        href="https://www.linkedin.com/in/itzel-perez-rodriguez-bab476182">LinkedIn</Button>
-        <Button size="small"
+        href="https://www.linkedin.com/in/itzel-perez-rodriguez-bab476182">
+            <LinkedInIcon fontSize="large"></LinkedInIcon>
+        </Button>
+        <Button sx={{color:"black"}} size="medium"
         target='_blank'
-        href='https://github.com/ItzelPr03'>GitHub</Button>
+        href='https://github.com/ItzelPr03'>
+            <GitHubIcon fontSize='large'></GitHubIcon>
+        </Button>
       </CardActions>
     </Card>
   );
